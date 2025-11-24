@@ -1,0 +1,321 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-gray-900 text-white font-sans;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.page-container {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 15px 50px; /* space on left/right */
+  display: flex; /* use flexbox */
+  justify-content: space-around; /* left h3, right links */
+  align-items: center; /* vertically center */
+}
+
+.navbar h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0; /* remove margin-bottom */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: royalblue;
+}
+
+
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Home */
+.home-section {
+  background: url("https://img.favpng.com/9/7/24/software-developer-computer-software-software-engineering-computer-programming-png-favpng-mb5UnqcYGeA8LPfMa6S3EnLcw.jpg") 
+  no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: black;
+  font-size: 2rem;
+  background-size: 1500px 390px;
+
+  
+}
+.home-left  button{
+     padding: 12px;
+     width: 12rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: palevioletred;
+
+}
+.home-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 5rem;
+}
+
+
+/* About */
+.about-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.about-left img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+.about-right {
+  max-width: 500px;
+  text-align: left;
+}
+.progress-bar p { margin: 10px 0 5px; }
+.progress-bar div {
+  width: 100%;
+  background: #ddd;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.progress-bar span {
+  display: block;
+  height: 8px;
+  border-radius: 4px;
+  background: royalblue;
+}
+.resume-btn {
+  padding: 10px 20px;
+   width: 12rem;
+   background-color: palevioletred;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.section {
+    min-height: 80vh;
+    padding: 29px 15px;
+    text-align: center;
+}
+.about-section .MYRESUME{
+    margin: 5rem;
+}
+.about-section .resume-btn
+{
+     margin: 1rem;
+}
+
+/* Services */
+
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.service-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+.service-card .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: royalblue;
+}
+#section .services-section{
+    min-height: 80vh;
+    padding: 29px 15px;
+    text-align: center;
+}
+
+/*image in project*/
+.portfolio-section .portfolio-card img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Portfolio */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.portfolio-card {
+  background: #bdadad;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.reviews-section img{
+  max-width: 300px;
+  border-radius: 250px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+
+}
+.section {
+    min-height: 49vh;
+    padding: 29px 15px;
+    text-align: center;
+}
+
+
+/* Contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+.contact-form input, .contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.contact-form button {
+  padding: 12px;
+  border: none;
+  background: royalblue;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: royalblue;
+}
+
+@media (max-width: 768px) {
+
+/* Global Section Adjustments */
+.section {
+    /* Reduce top padding on sections to account for fixed navbar on mobile */
+    padding: 80px 10px 50px; 
+    min-height: auto; /* Allow height to collapse */
+}
+
+/* Navbar Adjustments */
+.navbar {
+    padding: 15px 20px; /* Reduced horizontal padding */
+    justify-content: space-between;
+}
+
+/* Hide desktop navigation links on small screens (assuming a mobile menu icon is used in React component) */
+.navbar ul {
+    display: none; 
+}
+
+/* Home Section Adjustments */
+.home-section {
+    justify-content: center; /* Center content on mobile */
+    text-align: center;
+    padding: 150px 20px;
+    min-height: 80vh;
+}
+
+.home-content h1 {
+    font-size: 32px; /* Smaller font size */
+    position: relative; /* Remove fixed position */
+    top: 0;
+}
+
+/* About Section Adjustments */
+.about-container {
+    flex-direction: column; /* Stack image and text vertically */
+    gap: 30px;
+}
+
+.about-left img {
+    max-width: 250px; /* Smaller image on mobile */
+    height: 250px;
+}
+
+.about-right {
+    text-align: center; /* Center text block on mobile */
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+/* Services & Portfolio Grid Adjustments */
+.services-grid, 
+.portfolio-grid {
+    grid-template-columns: 1fr; /* Force single column layout */
+    gap: 30px;
+}
+
+.portfolio-card {
+    padding: 20px; /* Reduced padding */
+}
+
+/* Reviews Section Adjustments */
+.reviews-section img {
+    margin: 30px auto; /* Center image and reduce margin */
+}
+
+/* Contact Section Adjustments */
+.contact-form {
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+}
