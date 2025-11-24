@@ -108,13 +108,18 @@ const HomeSection = ({ scrollToSection }) => (
       <h2 className="text-2xl text-bold md:text-3xl lg:text-4xl font-light mb-10">
         Discipline from the Army, logic in code, heart in poetry—Full Stack Developer in a creative mode.
       </h2>
-      <div className="flex justify-center">
+      <div className="flex justify-center gap-4">
         <button
           onClick={() => scrollToSection("contact")}
-          className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 md:px-10 lg:px-12 rounded-2xl shadow-xl transition duration-300 transform hover:scale-105 active:scale-100 text-base md:text-lg"
+          className="bg-indigo-800 hover:bg-indigo-900 text-white font-bold py-4 px-8 md:px-10 lg:px-15 rounded-2xl shadow-xl transition duration-300 transform hover:scale-105 active:scale-100 text-base md:text-lg"
         >
           Get In Touch
         </button>
+        <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+        <button className="bg-indigo-800 hover:bg-indigo-800 text-white font-bold py-4 px-8 md:px-12 lg:px-20 rounded-2xl shadow-xl transition duration-300 transform hover:scale-105 active:scale-200 text-base md:text-lg">
+          View Resume
+        </button>
+        </a>
       </div>
     </div>
   </section>
