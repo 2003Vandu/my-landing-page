@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import bgImage from '../assets/bg.png';
 import profileImage from '../assets/image1.jpg';
-import resumePDF from '../assets/Doc/VAndeshGhodkeResume-update.pdf';
+import resumePDF from '../assets/Doc/NResume.pdf';
 import aiResumeImage from '../assets/Doc/AI-Resume_generator/Ai-Resume.png';
 import journalApp from'../assets/Doc/JournalAPP/journalApp.png'
 import HackaThon from '../assets/Doc/Hackathon/HackaThon.jpg'
